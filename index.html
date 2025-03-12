@@ -189,35 +189,109 @@
             <hr class="m-0" />
 
             <!-- Projects-->
+            <!-- Projects-->
             <section class="resume-section" id="projects_ai">
                 <div class="resume-section-content">
                     <h2 class="mb-5">AI Portfolio</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-tasks text-warning"></i></span>
-                            <h4>Developed a Deep Reinforcement Learning based solution for PHY layer parameter selection of LoRa end-devices in LoRaWAN (Masters’ Thesis)</h4>
-                            <p>Developed a deep reinforcemnt learning algorithm for the dynamic selection of physical layer paramters of LoRa devices. This helped in the creation of large LoRa networks with the best paramter combination and hence keeping their inter communication at the best level.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-tasks text-warning"></i></span>
-                            <h4>Developed a deep learning architecture for caption generation of images in Urdu Language</h4>
-                            <p>Developed an Attention-based LSTM to generate captions of the images provided in input in Urdu Language using Nastalique font. We faced various challenges during this project from Non-availability of Dataset to limitation of resources available. But we were able to overcome those challenges and were succesful.</p>
-                        </li>
-                        <!-- <li>
-                            <span class="fa-li"><i class="fas fa-tasks text-warning"></i></span>
-                            Attacking Graph Neural Networks to show their vulnerability to adversarial attacks and designing remedies to those attacks
-                        </li> -->
-                        <!-- <li>
-                            <span class="fa-li"><i class="fas fa-tasks text-warning"></i></span>
-                            Testing the effect of computer architecture optimizations on different machine learning and deep learning algorithms
-                        </li> -->
-                        <li>
-                            <span class="fa-li"><i class="fas fa-tasks text-warning"></i></span>
-                            <h4>Dead-reckoning of a quadcopter to remove the dependency on GPRS in remote areas. (Final Year Project - Bachelors)</h4>
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <!-- Project Card 1 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 project-card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-robot text-primary mr-3 fa-2x"></i>
+                                        <h4 class="card-title mb-0">LoRa Network Optimization using DRL</h4>
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted">Master's Thesis Project</h6>
+                                    <p class="card-text">Developed a deep reinforcement learning algorithm for the dynamic selection of physical layer parameters of LoRa devices. This innovation enabled the creation of large LoRa networks with optimized parameter combinations, maintaining peak inter-communication efficiency.</p>
+                                    <div class="tech-stack">
+                                        <span class="badge badge-primary">Deep RL</span>
+                                        <span class="badge badge-info">IoT</span>
+                                        <span class="badge badge-success">Python</span>
+                                        <span class="badge badge-warning">TensorFlow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 project-card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-language text-primary mr-3 fa-2x"></i>
+                                        <h4 class="card-title mb-0">Urdu Image Caption Generator</h4>
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted">Research Project</h6>
+                                    <p class="card-text">Engineered an Attention-based LSTM architecture for generating Urdu captions in Nastalique font for input images. Successfully overcame challenges including dataset scarcity and resource limitations to create a pioneering solution in Urdu NLP.</p>
+                                    <div class="tech-stack">
+                                        <span class="badge badge-primary">Deep Learning</span>
+                                        <span class="badge badge-info">NLP</span>
+                                        <span class="badge badge-success">Computer Vision</span>
+                                        <span class="badge badge-warning">PyTorch</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 project-card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-drone text-primary mr-3 fa-2x"></i>
+                                        <h4 class="card-title mb-0">Quadcopter Dead-reckoning System</h4>
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted">Bachelor's Final Year Project</h6>
+                                    <p class="card-text">Developed an innovative navigation system for quadcopters that eliminates GPRS dependency in remote areas, enabling autonomous operation in GPS-denied environments.</p>
+                                    <div class="tech-stack">
+                                        <span class="badge badge-primary">Robotics</span>
+                                        <span class="badge badge-info">Sensor Fusion</span>
+                                        <span class="badge badge-success">Control Systems</span>
+                                        <span class="badge badge-warning">Arduino</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
+
+            <!-- Add this CSS to your styles.css file -->
+            <style>
+                .project-card {
+                    transition: transform 0.3s ease-in-out;
+                    border: none;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .project-card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .tech-stack {
+                    margin-top: 1rem;
+                }
+
+                .badge {
+                    margin-right: 0.5rem;
+                    padding: 0.5rem 1rem;
+                    font-size: 0.8rem;
+                }
+
+                .card-subtitle {
+                    font-size: 0.9rem;
+                    margin-top: 0.5rem;
+                }
+
+                .fa-2x {
+                    font-size: 2em;
+                }
+
+                .text-primary {
+                    color: #bd5d38 !important;
+                }
+            </style>
             <hr class="m-0" />
 
             <!-- Publications-->
